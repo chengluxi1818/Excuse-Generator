@@ -1,0 +1,31 @@
+a {
+	color:black;
+	text-decoration: none;
+}
+
+a:hover {
+	color:grey;
+	text-decoration: none;
+}
+
+.parent {
+	overflow: hidden;
+}
+
+.col-1 {
+	float: left;
+	width: 33.33%;
+	/*background: blue;*/
+}
+
+.col-2 {
+	float: left;
+	width: 33.33%;
+	/*background: red;*/
+}
+
+.col-3 {
+	float: left;
+	width: 33.33%;
+	/*background: yellow;*/
+}
