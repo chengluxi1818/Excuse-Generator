@@ -9,6 +9,7 @@ a:hover {
 }
 
 .parent {
+	position: relative;
 	overflow: hidden;
 }
 
@@ -24,8 +25,68 @@ a:hover {
 	/*background: red;*/
 }
 
+.Pyramid {
+	font-size: 13pt;
+}
+
 .col-3 {
 	float: left;
 	width: 33.33%;
 	/*background: yellow;*/
+}
+
+.bossPath {
+	position: absolute;
+	top: 18%;
+	left: 54%;
+	font-size: 13pt;
+	width: 120px;
+}
+
+.vpPath {
+	position: absolute;
+	top: 31%;
+	right: 58%;
+	font-size: 13pt;
+	width: 120px;
+}
+
+.directorPath {
+	position: absolute;
+	bottom: 33%;
+	right: 58%;
+	font-size: 13pt;
+	width: 120px;
+}
+
+.pmPath {
+	position: absolute;
+	bottom: 24%;
+	left: 61%;
+	font-size: 13pt;
+	width: 120px;
+}
+
+.commeradPath {
+	position: absolute;
+	bottom: 10%;
+	left: 63%;
+	font-size: 13pt;
+	width: 120px;
+}
+
+.leftHiddenWord {
+	position: absolute;
+	bottom: 41.5%;
+	right: 67%;
+	font-size: 13pt;
+	font-family: monospace;
+}
+
+.rightHiddenWord {
+	position: absolute;
+	top: 40%;
+	left: 73%;
+	font-size: 13pt;
+	font-family: monospace;
 }
