@@ -1,4 +1,4 @@
-/*var showHidden = document.getElementById('ShowHidden');
+var showHidden = document.getElementById('ShowHidden');
 
 var boss = document.getElementById('boss');
 var vp = document.getElementById('vp');
@@ -10,14 +10,12 @@ var bossPath = document.getElementsByClassName('bossPath')[0];
 var vpPath = document.getElementsByClassName('vpPath')[0];
 var directorPath = document.getElementsByClassName('directorPath')[0];
 var pmPath = document.getElementsByClassName('pmPath')[0];
-var comradePath = document.getElementsByClassName('comradePath')[0];*/
-
+var comradePath = document.getElementsByClassName('comradePath')[0];
 
 function init() {
-
 	document.getElementById('ShowHidden').style.visibility="hidden";
 
-	document.getElementsByClassName('bossPath')[0].style.visibility="hidden";
+	bossPath.style.visibility="hidden";
 	document.getElementsByClassName('vpPath')[0].style.visibility="hidden";
 	document.getElementsByClassName('directorPath')[0].style.visibility="hidden";
 	document.getElementsByClassName('pmPath')[0].style.visibility="hidden";

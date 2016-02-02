@@ -8,6 +8,27 @@ a:hover {
 	text-decoration: none;
 }
 
+.navigation {
+	width:10%;
+	margin: auto;
+	overflow: hidden;
+	font-family: monospace;
+	font-size: 13pt;
+}
+
+.navigation a {
+	float: left;
+	width: 50%;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: white;
+	background: black;
+}
+
 .parent {
 	position: relative;
 	overflow: hidden;
