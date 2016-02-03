@@ -12,17 +12,20 @@ var directorPath = document.getElementsByClassName('directorPath')[0];
 var pmPath = document.getElementsByClassName('pmPath')[0];
 var comradePath = document.getElementsByClassName('comradePath')[0];
 
+var leftHiddenWord = document.getElementsByClassName('leftHiddenWord')[0];
+var rightHiddenWord = document.getElementsByClassName('rightHiddenWord')[0];
+
 function init() {
 	document.getElementById('ShowHidden').style.visibility="hidden";
 
 	bossPath.style.visibility="hidden";
-	document.getElementsByClassName('vpPath')[0].style.visibility="hidden";
-	document.getElementsByClassName('directorPath')[0].style.visibility="hidden";
-	document.getElementsByClassName('pmPath')[0].style.visibility="hidden";
-	document.getElementsByClassName('comradePath')[0].style.visibility="hidden";
+	vpPath.style.visibility="hidden";
+	directorPath.style.visibility="hidden";
+	pmPath.style.visibility="hidden";
+	comradePath.style.visibility="hidden";
 
-	document.getElementsByClassName('leftHiddenWord')[0].style.visibility="hidden";
-	document.getElementsByClassName('rightHiddenWord')[0].style.visibility="hidden";
+	leftHiddenWord.style.visibility="hidden";
+	rightHiddenWord.style.visibility="hidden";
 }
 
 function show_hidden(index) {
@@ -32,57 +35,57 @@ function show_hidden(index) {
 	case 0:
 		document.getElementById('ShowHidden').innerHTML = "You are boss";
 
-		document.getElementById('boss').style.backgroundColor = "black";
-		document.getElementById('boss').style.color = "white";
+		boss.style.backgroundColor = "black";
+		boss.style.color = "white";
 
 		document.getElementsByClassName('bossPath')[0].style.visibility="visible";
 
-		document.getElementsByClassName('rightHiddenWord')[0].innerHTML="You are boss";
-		document.getElementsByClassName('rightHiddenWord')[0].style.visibility="visible";
+		rightHiddenWord.innerHTML="You are boss";
+		rightHiddenWord.style.visibility="visible";
 
 		break;
 	case 1:
 		document.getElementById('ShowHidden').innerHTML = "You are VP";
-		document.getElementById('vp').style.backgroundColor = "black";
-		document.getElementById('vp').style.color = "white";
+		vp.style.backgroundColor = "black";
+		vp.style.color = "white";
 
-		document.getElementsByClassName('vpPath')[0].style.visibility="visible";
+		vpPath.style.visibility="visible";
 
-		document.getElementsByClassName('leftHiddenWord')[0].innerHTML="You are vp";
-		document.getElementsByClassName('leftHiddenWord')[0].style.visibility="visible";
+		leftHiddenWord.innerHTML="You are vp";
+		leftHiddenWord.style.visibility="visible";
 
 		break;
 	case 2:
 		document.getElementById('ShowHidden').innerHTML = "You are Director";
-		document.getElementById('director').style.backgroundColor = "black";
-		document.getElementById('director').style.color = "white";
+		director.style.backgroundColor = "black";
+		director.style.color = "white";
 
-		document.getElementsByClassName('directorPath')[0].style.visibility="visible";
+		directorPath.style.visibility="visible";
 
-		document.getElementsByClassName('leftHiddenWord')[0].innerHTML="You are director";
-		document.getElementsByClassName('leftHiddenWord')[0].style.visibility="visible";
+		leftHiddenWord.innerHTML="You are director";
+		leftHiddenWord.style.visibility="visible";
 
 		break;	
 	case 3:
 		document.getElementById('ShowHidden').innerHTML = "You are PM";
-		document.getElementById('pm').style.backgroundColor = "black";
-		document.getElementById('pm').style.color = "white";
+		pm.style.backgroundColor = "black";
+		pm.style.color = "white";
 
-		document.getElementsByClassName('pmPath')[0].style.visibility="visible";
+		pmPath.style.visibility="visible";
 
-		document.getElementsByClassName('rightHiddenWord')[0].innerHTML="You are pm";
-		document.getElementsByClassName('rightHiddenWord')[0].style.visibility="visible";
+		rightHiddenWord.innerHTML="You are pm";
+		rightHiddenWord.style.visibility="visible";
 
 		break;	
 	case 4:
 		document.getElementById('ShowHidden').innerHTML = "You are one of us";
-		document.getElementById('comrade').style.backgroundColor = "black";
-		document.getElementById('comrade').style.color = "white";
+		comrade.style.backgroundColor = "black";
+		comrade.style.color = "white";
 
-		document.getElementsByClassName('comradePath')[0].style.visibility="visible";
+		comradePath.style.visibility="visible";
 
-		document.getElementsByClassName('rightHiddenWord')[0].innerHTML="You are comrade";
-		document.getElementsByClassName('rightHiddenWord')[0].style.visibility="visible";
+		rightHiddenWord.innerHTML="You are comrade";
+		rightHiddenWord.style.visibility="visible";
 
 		break;			
 	default:
@@ -95,41 +98,41 @@ function hide_hidden(index) {
 
 	switch(index) {
 	case 0:
-		document.getElementById('boss').style.color="";
-		document.getElementById('boss').style.backgroundColor="";
+		boss.style.color="";
+		boss.style.backgroundColor="";
 
 		document.getElementsByClassName('bossPath')[0].style.visibility="hidden";
-		document.getElementsByClassName('rightHiddenWord')[0].style.visibility="hidden";
+		rightHiddenWord.style.visibility="hidden";
 
 		break;
 	case 1:
-		document.getElementById('vp').style.color="";
-		document.getElementById('vp').style.backgroundColor="";
+		vp.style.color="";
+		vp.style.backgroundColor="";
 
-		document.getElementsByClassName('vpPath')[0].style.visibility="hidden";
-		document.getElementsByClassName('leftHiddenWord')[0].style.visibility="hidden";
+		vpPath.style.visibility="hidden";
+		leftHiddenWord.style.visibility="hidden";
 
 		break;
 	case 2:
-		document.getElementById('director').style.color="";
-		document.getElementById('director').style.backgroundColor="";
+		director.style.color="";
+		director.style.backgroundColor="";
 
-		document.getElementsByClassName('directorPath')[0].style.visibility="hidden";
-		document.getElementsByClassName('leftHiddenWord')[0].style.visibility="hidden";
+		directorPath.style.visibility="hidden";
+		leftHiddenWord.style.visibility="hidden";
 		break;	
 	case 3:
-		document.getElementById('pm').style.color="";
-		document.getElementById('pm').style.backgroundColor="";
+		pm.style.color="";
+		pm.style.backgroundColor="";
 
-		document.getElementsByClassName('pmPath')[0].style.visibility="hidden";
-		document.getElementsByClassName('rightHiddenWord')[0].style.visibility="hidden";
+		pmPath.style.visibility="hidden";
+		rightHiddenWord.style.visibility="hidden";
 		break;	
 	case 4:
-		document.getElementById('comrade').style.color="";
-		document.getElementById('comrade').style.backgroundColor="";
+		comrade.style.color="";
+		comrade.style.backgroundColor="";
 
-		document.getElementsByClassName('comradePath')[0].style.visibility="hidden";
-		document.getElementsByClassName('rightHiddenWord')[0].style.visibility="hidden";
+		comradePath.style.visibility="hidden";
+		rightHiddenWord.style.visibility="hidden";
 		break;			
 	default:
 		showHidden.innerHTML = "You are One of us";
