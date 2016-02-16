@@ -1,3 +1,20 @@
+@font-face {
+	font-family: ComicZine;
+	src: url("./Comic-Zine-OT/comic_zine_ot.otf");
+}
+
+.PageTitle {
+	font-family: ComicZine;
+}
+
+.PageTitle h1 {
+	font-size: 45pt;
+}
+
+.PageTitle h2 {
+	font-size: 25pt;
+}
+
 a {
 	color:black;
 	text-decoration: none;
