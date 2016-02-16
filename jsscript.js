@@ -1,3 +1,5 @@
+var parent = document.getElementsByClassName('parent')[0];
+
 var showHidden = document.getElementById('ShowHidden');
 
 var boss = document.getElementById('boss');
@@ -13,9 +15,15 @@ var pmPath = document.getElementsByClassName('pmPath')[0];
 var comradePath = document.getElementsByClassName('comradePath')[0];
 
 var leftHiddenWord = document.getElementsByClassName('leftHiddenWord')[0];
+var leftHiddenWordMiddle = document.getElementsByClassName('leftHiddenWordMiddle')[0];
 var rightHiddenWord = document.getElementsByClassName('rightHiddenWord')[0];
 
+/*--------------------------------------------------------------------------*/
+var bossPage = document.getElementsByClassName('bossPage')[0];
+
 function init() {
+	parent.style.display="block";
+	bossPage.style.display="none";
 	document.getElementById('ShowHidden').style.visibility="hidden";
 
 	bossPath.style.visibility="hidden";
@@ -25,8 +33,10 @@ function init() {
 	comradePath.style.visibility="hidden";
 
 	leftHiddenWord.style.visibility="hidden";
+	leftHiddenWordMiddle.style.visibility="hidden";
 	rightHiddenWord.style.visibility="hidden";
 }
+
 
 function show_hidden(index) {
 	document.getElementById('ShowHidden').style.visibility="visible";
@@ -62,8 +72,8 @@ function show_hidden(index) {
 
 		directorPath.style.visibility="visible";
 
-		leftHiddenWord.innerHTML="You are director";
-		leftHiddenWord.style.visibility="visible";
+		leftHiddenWordMiddle.innerHTML="You are director";
+		leftHiddenWordMiddle.style.visibility="visible";
 
 		break;	
 	case 3:
@@ -93,6 +103,7 @@ function show_hidden(index) {
 	}
 }
 
+
 function hide_hidden(index) {
 	document.getElementById('ShowHidden').style.visibility="hidden";
 
@@ -118,7 +129,7 @@ function hide_hidden(index) {
 		director.style.backgroundColor="";
 
 		directorPath.style.visibility="hidden";
-		leftHiddenWord.style.visibility="hidden";
+		leftHiddenWordMiddle.style.visibility="hidden";
 		break;	
 	case 3:
 		pm.style.color="";
@@ -137,8 +148,10 @@ function hide_hidden(index) {
 	default:
 		showHidden.innerHTML = "You are One of us";
 	}
-
-
 }
 
+function goto_bossPage() {
+	parent.style.display="none";
+	bossPage.style.display="block";
+}
 onload = init;

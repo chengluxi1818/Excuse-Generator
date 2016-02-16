@@ -9,7 +9,7 @@ a:hover {
 }
 
 .navigation {
-	width:10%;
+	width:15%;
 	margin: auto;
 	overflow: hidden;
 	font-family: monospace;
@@ -32,15 +32,16 @@ a:hover {
 .parent {
 	position: relative;
 	overflow: hidden;
+	height: 450px;
 }
 
-.col-1 {
+.gridLeft {
 	float: left;
 	width: 33.33%;
 	/*background: blue;*/
 }
 
-.col-2 {
+.gridMiddle {
 	float: left;
 	width: 33.33%;
 	/*background: red;*/
@@ -50,7 +51,7 @@ a:hover {
 	font-size: 13pt;
 }
 
-.col-3 {
+.gridRight {
 	float: left;
 	width: 33.33%;
 	/*background: yellow;*/
@@ -58,7 +59,7 @@ a:hover {
 
 .bossPath {
 	position: absolute;
-	top: 18%;
+	top: 17.5%;
 	left: 54%;
 	font-size: 13pt;
 	width: 120px;
@@ -74,23 +75,23 @@ a:hover {
 
 .directorPath {
 	position: absolute;
-	bottom: 33%;
-	right: 58%;
+	bottom: 40%;
+	right: 57%;
 	font-size: 13pt;
 	width: 120px;
 }
 
 .pmPath {
 	position: absolute;
-	bottom: 24%;
-	left: 61%;
+	bottom: 26%;
+	left: 60.5%;
 	font-size: 13pt;
 	width: 120px;
 }
 
 .comradePath {
 	position: absolute;
-	bottom: 10%;
+	bottom: 13%;
 	left: 63%;
 	font-size: 13pt;
 	width: 120px;
@@ -98,16 +99,36 @@ a:hover {
 
 .leftHiddenWord {
 	position: absolute;
-	bottom: 41.5%;
-	right: 67%;
+	bottom: 43%;
+	right: 67.5%;
+	font-size: 13pt;
+	font-family: monospace;
+}
+
+.leftHiddenWordMiddle {
+	position: absolute;
+	bottom: 62%;
+	right: 66.5%;
 	font-size: 13pt;
 	font-family: monospace;
 }
 
 .rightHiddenWord {
 	position: absolute;
-	top: 40%;
-	left: 73%;
+	top: 39%;
+	left: 73.5%;
 	font-size: 13pt;
 	font-family: monospace;
+}
+
+.bossPage {
+	text-align: center;
+	height: 450px;
+}
+
+.bossPageText {
+	vertical-align: middle;
+	line-height: 450px;
+	font-family: monospace;
+	font-size: 13pt;
 }

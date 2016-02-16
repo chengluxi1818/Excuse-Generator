@@ -1,0 +1,27 @@
+common used css style keywords
+
+.common {
+	background: ;
+	
+	color: ;
+
+	left: ;
+	right: ;
+	top: ;
+	bottom: ;
+	
+	width: ;
+	height: ;
+	
+	text-align: right, left, center;
+	
+	padding: ;
+	float: ;
+	margin: ;
+
+	position: relative, absolute, static, fixed;
+
+	font: ;
+	font-size: ;
+	
+}
