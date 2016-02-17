@@ -1,0 +1,28 @@
+.Pyramid {
+	font-size: 13pt;
+}
+
+#boss:hover {
+	background: black;
+	color: white;
+}
+
+#vp:hover {
+	background: black;
+	color: white;
+}
+
+#director:hover {
+	background: black;
+	color: white;
+}
+
+#pm:hover {
+	background: black;
+	color: white;
+}
+
+#comrade:hover {
+	background: black;
+	color: white;	
+}

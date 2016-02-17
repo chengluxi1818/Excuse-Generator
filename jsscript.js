@@ -25,16 +25,6 @@ function init() {
 	parent.style.display="block";
 	bossPage.style.display="none";
 	document.getElementById('ShowHidden').style.visibility="hidden";
-
-	// bossPath.style.display="hidden";
-	// vpPath.style.display="hidden";
-	// directorPath.style.display="hidden";
-	// pmPath.style.display="hidden";
-	// comradePath.style.display="hidden";
-
-	// leftHiddenWord.style.display="hidden";
-	// leftHiddenWordMiddle.style.display="hidden";
-	// rightHiddenWord.style.display="hidden";
 }
 
 
@@ -45,9 +35,6 @@ function show_hidden(index) {
 	case 0:
 		document.getElementById('ShowHidden').innerHTML = "You are boss";
 
-		boss.style.backgroundColor = "black";
-		boss.style.color = "white";
-
 		document.getElementsByClassName('bossPath')[0].style.display="block";
 
 		rightHiddenWord.innerHTML="You are boss";
@@ -56,8 +43,6 @@ function show_hidden(index) {
 		break;
 	case 1:
 		document.getElementById('ShowHidden').innerHTML = "You are VP";
-		vp.style.backgroundColor = "black";
-		vp.style.color = "white";
 
 		vpPath.style.display="block";
 
@@ -67,8 +52,6 @@ function show_hidden(index) {
 		break;
 	case 2:
 		document.getElementById('ShowHidden').innerHTML = "You are Director";
-		director.style.backgroundColor = "black";
-		director.style.color = "white";
 
 		directorPath.style.display="block";
 
@@ -78,8 +61,6 @@ function show_hidden(index) {
 		break;	
 	case 3:
 		document.getElementById('ShowHidden').innerHTML = "You are PM";
-		pm.style.backgroundColor = "black";
-		pm.style.color = "white";
 
 		pmPath.style.display="block";
 
@@ -89,8 +70,6 @@ function show_hidden(index) {
 		break;	
 	case 4:
 		document.getElementById('ShowHidden').innerHTML = "You are one of us";
-		comrade.style.backgroundColor = "black";
-		comrade.style.color = "white";
 
 		comradePath.style.display="block";
 
@@ -109,39 +88,22 @@ function hide_hidden(index) {
 
 	switch(index) {
 	case 0:
-		boss.style.color="";
-		boss.style.backgroundColor="";
-
 		document.getElementsByClassName('bossPath')[0].style.display="none";
 		rightHiddenWord.style.display="none";
-
 		break;
 	case 1:
-		vp.style.color="";
-		vp.style.backgroundColor="";
-
 		vpPath.style.display="none";
 		leftHiddenWord.style.display="none";
-
 		break;
 	case 2:
-		director.style.color="";
-		director.style.backgroundColor="";
-
 		directorPath.style.display="none";
 		leftHiddenWordMiddle.style.display="none";
 		break;	
 	case 3:
-		pm.style.color="";
-		pm.style.backgroundColor="";
-
 		pmPath.style.display="none";
 		rightHiddenWord.style.display="none";
 		break;	
 	case 4:
-		comrade.style.color="";
-		comrade.style.backgroundColor="";
-
 		comradePath.style.display="none";
 		rightHiddenWord.style.display="none";
 		break;			
