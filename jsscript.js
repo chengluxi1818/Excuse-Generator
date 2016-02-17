@@ -26,15 +26,15 @@ function init() {
 	bossPage.style.display="none";
 	document.getElementById('ShowHidden').style.visibility="hidden";
 
-	bossPath.style.visibility="hidden";
-	vpPath.style.visibility="hidden";
-	directorPath.style.visibility="hidden";
-	pmPath.style.visibility="hidden";
-	comradePath.style.visibility="hidden";
+	// bossPath.style.display="hidden";
+	// vpPath.style.display="hidden";
+	// directorPath.style.display="hidden";
+	// pmPath.style.display="hidden";
+	// comradePath.style.display="hidden";
 
-	leftHiddenWord.style.visibility="hidden";
-	leftHiddenWordMiddle.style.visibility="hidden";
-	rightHiddenWord.style.visibility="hidden";
+	// leftHiddenWord.style.display="hidden";
+	// leftHiddenWordMiddle.style.display="hidden";
+	// rightHiddenWord.style.display="hidden";
 }
 
 
@@ -48,10 +48,10 @@ function show_hidden(index) {
 		boss.style.backgroundColor = "black";
 		boss.style.color = "white";
 
-		document.getElementsByClassName('bossPath')[0].style.visibility="visible";
+		document.getElementsByClassName('bossPath')[0].style.display="block";
 
 		rightHiddenWord.innerHTML="You are boss";
-		rightHiddenWord.style.visibility="visible";
+		rightHiddenWord.style.display="block";
 
 		break;
 	case 1:
@@ -59,10 +59,10 @@ function show_hidden(index) {
 		vp.style.backgroundColor = "black";
 		vp.style.color = "white";
 
-		vpPath.style.visibility="visible";
+		vpPath.style.display="block";
 
 		leftHiddenWord.innerHTML="You are vp";
-		leftHiddenWord.style.visibility="visible";
+		leftHiddenWord.style.display="block";
 
 		break;
 	case 2:
@@ -70,10 +70,10 @@ function show_hidden(index) {
 		director.style.backgroundColor = "black";
 		director.style.color = "white";
 
-		directorPath.style.visibility="visible";
+		directorPath.style.display="block";
 
 		leftHiddenWordMiddle.innerHTML="You are director";
-		leftHiddenWordMiddle.style.visibility="visible";
+		leftHiddenWordMiddle.style.display="block";
 
 		break;	
 	case 3:
@@ -81,10 +81,10 @@ function show_hidden(index) {
 		pm.style.backgroundColor = "black";
 		pm.style.color = "white";
 
-		pmPath.style.visibility="visible";
+		pmPath.style.display="block";
 
 		rightHiddenWord.innerHTML="You are pm";
-		rightHiddenWord.style.visibility="visible";
+		rightHiddenWord.style.display="block";
 
 		break;	
 	case 4:
@@ -92,10 +92,10 @@ function show_hidden(index) {
 		comrade.style.backgroundColor = "black";
 		comrade.style.color = "white";
 
-		comradePath.style.visibility="visible";
+		comradePath.style.display="block";
 
 		rightHiddenWord.innerHTML="You are comrade";
-		rightHiddenWord.style.visibility="visible";
+		rightHiddenWord.style.display="block";
 
 		break;			
 	default:
@@ -112,38 +112,38 @@ function hide_hidden(index) {
 		boss.style.color="";
 		boss.style.backgroundColor="";
 
-		document.getElementsByClassName('bossPath')[0].style.visibility="hidden";
-		rightHiddenWord.style.visibility="hidden";
+		document.getElementsByClassName('bossPath')[0].style.display="none";
+		rightHiddenWord.style.display="none";
 
 		break;
 	case 1:
 		vp.style.color="";
 		vp.style.backgroundColor="";
 
-		vpPath.style.visibility="hidden";
-		leftHiddenWord.style.visibility="hidden";
+		vpPath.style.display="none";
+		leftHiddenWord.style.display="none";
 
 		break;
 	case 2:
 		director.style.color="";
 		director.style.backgroundColor="";
 
-		directorPath.style.visibility="hidden";
-		leftHiddenWordMiddle.style.visibility="hidden";
+		directorPath.style.display="none";
+		leftHiddenWordMiddle.style.display="none";
 		break;	
 	case 3:
 		pm.style.color="";
 		pm.style.backgroundColor="";
 
-		pmPath.style.visibility="hidden";
-		rightHiddenWord.style.visibility="hidden";
+		pmPath.style.display="none";
+		rightHiddenWord.style.display="none";
 		break;	
 	case 4:
 		comrade.style.color="";
 		comrade.style.backgroundColor="";
 
-		comradePath.style.visibility="hidden";
-		rightHiddenWord.style.visibility="hidden";
+		comradePath.style.display="none";
+		rightHiddenWord.style.display="none";
 		break;			
 	default:
 		showHidden.innerHTML = "You are One of us";
