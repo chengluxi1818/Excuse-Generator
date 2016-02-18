@@ -26,11 +26,11 @@ a:hover {
 }
 
 .navigation {
-	width:15%;
+	width: 180px;
 	margin: auto;
 	overflow: hidden;
 	font-family: monospace;
-	font-size: 1.2vw;
+	font-size: 13pt;
 }
 
 .navigation a {
