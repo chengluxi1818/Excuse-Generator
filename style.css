@@ -49,25 +49,8 @@ a:hover {
 .parent {
 	position: relative;
 	overflow: hidden;
-	height: 450px;
-}
-
-.gridLeft {
-	float: left;
-	width: 33.33%;
-	/*background: blue;*/
-}
-
-.gridMiddle {
-	float: left;
-	width: 33.33%;
-	/*background: red;*/
-}
-
-.gridRight {
-	float: left;
-	width: 33.33%;
-	/*background: yellow;*/
+	height: 40%;
+	font-family: monospace;
 }
 
 .bossPath {

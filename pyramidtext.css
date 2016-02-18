@@ -1,28 +1,80 @@
 .Pyramid {
-	font-size: 1.2vw;
+	position: relative;
+	font-size: 1.5em;
+	text-align: center;
 }
 
-#boss:hover {
+.boss {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 21%;
+	width: 50px;
+	text-align: center;
+}
+
+.boss:hover {
 	background: black;
 	color: white;
 }
 
-#vp:hover {
+.vp {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 36%;
+	width: 28px;
+	text-align: center;
+}
+
+.vp:hover {
 	background: black;
 	color: white;
 }
 
-#director:hover {
+.director {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 51%;
+	width: 96px;
+	text-align: center;
+}
+
+.director:hover {
 	background: black;
 	color: white;
 }
 
-#pm:hover {
+.pm {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 66%;
+	width: 180px;
+	text-align: center;
+}
+
+.pm:hover {
 	background: black;
 	color: white;
 }
 
-#comrade:hover {
+.comrade {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 81%;
+	width: 278px;
+	text-align: center;
+}
+
+.comrade:hover {
 	background: black;
 	color: white;	
 }
