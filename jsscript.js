@@ -35,16 +35,12 @@ function show_hidden(index) {
 	case 0:
 		document.getElementById('ShowHidden').innerHTML = "You are boss";
 
-		document.getElementsByClassName('bossPath')[0].style.display="block";
-
 		rightHiddenWord.innerHTML="You are boss";
 		rightHiddenWord.style.display="block";
 
 		break;
 	case 1:
 		document.getElementById('ShowHidden').innerHTML = "You are VP";
-
-		vpPath.style.display="block";
 
 		leftHiddenWord.innerHTML="You are vp";
 		leftHiddenWord.style.display="block";
@@ -53,8 +49,6 @@ function show_hidden(index) {
 	case 2:
 		document.getElementById('ShowHidden').innerHTML = "You are Director";
 
-		directorPath.style.display="block";
-
 		leftHiddenWordMiddle.innerHTML="You are director";
 		leftHiddenWordMiddle.style.display="block";
 
@@ -62,16 +56,12 @@ function show_hidden(index) {
 	case 3:
 		document.getElementById('ShowHidden').innerHTML = "You are PM";
 
-		pmPath.style.display="block";
-
 		rightHiddenWord.innerHTML="You are pm";
 		rightHiddenWord.style.display="block";
 
 		break;	
 	case 4:
 		document.getElementById('ShowHidden').innerHTML = "You are one of us";
-
-		comradePath.style.display="block";
 
 		rightHiddenWord.innerHTML="You are comrade";
 		rightHiddenWord.style.display="block";
@@ -88,23 +78,18 @@ function hide_hidden(index) {
 
 	switch(index) {
 	case 0:
-		document.getElementsByClassName('bossPath')[0].style.display="none";
 		rightHiddenWord.style.display="none";
 		break;
 	case 1:
-		vpPath.style.display="none";
 		leftHiddenWord.style.display="none";
 		break;
 	case 2:
-		directorPath.style.display="none";
 		leftHiddenWordMiddle.style.display="none";
 		break;	
 	case 3:
-		pmPath.style.display="none";
 		rightHiddenWord.style.display="none";
 		break;	
 	case 4:
-		comradePath.style.display="none";
 		rightHiddenWord.style.display="none";
 		break;			
 	default:
