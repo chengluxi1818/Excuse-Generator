@@ -19,13 +19,15 @@
 	color: white;
 }
 
-/*.bossPath {
+.bossPath {
 	display: none;
-	top: 17.5%;
+	position: absolute;
+	top: -21px;
 	left: 50px;
 	width: 300px;
-	background: red;
-}*/
+	color: black;
+	text-align: left;
+}
 
 .bossPaht_1 {
 	display: none;
@@ -46,6 +48,16 @@
 	color: white;
 }
 
+.vpPath {
+	display: none;
+	position: absolute;
+	top: -21px;
+	right: 28px;
+	width: 175px;
+	color: black;
+	text-align: left;
+}
+
 .director {
 	position: absolute;
 	left: 0;
@@ -54,7 +66,6 @@
 	top: 51%;
 	width: 96px;
 	text-align: center;
-	background: blue;
 }
 
 .director:hover {
@@ -65,11 +76,11 @@
 .directorPath {
 	display: none;
 	position: absolute;
-	width: 200px;
+	width: 135px;
 	bottom: -41px;
-	right: 98px;
+	right: 96px;
+	text-align: left;
 	color: black;
-	/*background: red;*/
 }
 
 .pm {
@@ -87,6 +98,17 @@
 	color: white;
 }
 
+.pmPath {
+	display: none;
+	position: absolute;
+	width: 200px;	
+	height: 150px;
+	bottom: 2px;
+	left: 180px;
+	color: black;
+	text-align: left;
+}
+
 .comrade {
 	position: absolute;
 	left: 0;
@@ -100,4 +122,15 @@
 .comrade:hover {
 	background: black;
 	color: white;	
+}
+
+.comradePath {
+	display: none;
+	position: absolute;
+	width: 160px;	
+	height: 220px;
+	bottom: -2px;
+	left: 278px;
+	color: black;
+	text-align: left;
 }

@@ -53,43 +53,6 @@ a:hover {
 	font-family: monospace;
 }
 
-.vpPath {
-	display: none;
-	position: absolute;
-	top: 31%;
-	right: 58%;
-	font-size: 13pt;
-	width: 120px;
-}
-
-/*.directorPath {
-	display: block;
-	position: absolute;
-	bottom: 40%;
-	right: 57%;
-	font-size: 13pt;
-	width: 120px;
-	background: red;
-}*/
-
-.pmPath {
-	display: none;
-	position: absolute;
-	bottom: 26%;
-	left: 60.5%;
-	font-size: 13pt;
-	width: 120px;
-}
-
-.comradePath {
-	display: none;
-	position: absolute;
-	bottom: 13%;
-	left: 63%;
-	font-size: 13pt;
-	width: 120px;
-}
-
 .leftHiddenWord {
 	display: none;
 	position: absolute;

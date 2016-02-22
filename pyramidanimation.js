@@ -1,24 +1,37 @@
 $(document).ready(function() {
 	$(".boss").hover(function() {
-		// $(".bossPath").toggle(function() {
-			$(".bossPath_1, .bossPath_2, .bossPath_3").each(function(fadeInDiv) {
-				$(this).delay(fadeInDiv * 500).fadeIn(1000);
-			});
-		// });
+		var path = $(".bossPath");
+
+		if(path.css("display") == "none") {
+			path.css("display", "block");
+			if(!path.is(".animated")) {
+				path.animate({
+					left: "80px"
+				});
+			}
+		}
+		else {
+			path.css('left', "50px");
+			path.css('display', "none");
+		}
 	});
 
-	$(".vp").mouseenter(function() {
-		$(".vpPath").show();
-		$(".vpPath").animate({
-			// opacity: "toggle",
-			left: "800px",
-			right: "200px"
-		});
-	});
-	$(".vp").mouseleave(function() {
-		$(".vpPath").stop();
-	});
+	$(".vp").hover(function() {
+		var path = $(".vpPath");
 
+		if(path.css("display") == "none") {
+			path.css("display", "block");
+			if(!path.is(".animated")) {
+				path.animate({
+					right: "105px"
+				});
+			}
+		}
+		else {
+			path.css('right', "28px");
+			path.css('display', "none");
+		}
+	});
 
 	$(".director").hover(function() {
 		var path = $(".directorPath");
@@ -29,21 +42,47 @@ $(document).ready(function() {
 			path.css("display", "block");
 			if(!path.is(".animated")) {
 				path.animate({
-					right: "200px"
+					right: "170px"
 				});
 			}
 		}
 		else {
-			path.css('right', "98px");
+			path.css('right', "96px");
 			path.css('display', "none");
 		}
 	});
 
 	$(".pm").hover(function() {
-		$(".pmPath").toggle();
+		var path = $(".pmPath");
+
+		if(path.css("display") == "none") {
+			path.css("display", "block");
+			if(!path.is(".animated")) {
+				path.animate({
+					left: "250px"
+				});
+			}
+		}
+		else {
+			path.css('left', "180px");
+			path.css('display', "none");
+		}
 	});
 
 	$(".comrade").hover(function() {
-		$(".comradePath").toggle();
+		var path = $(".comradePath");
+
+		if(path.css("display") == "none") {
+			path.css("display", "block");
+			if(!path.is(".animated")) {
+				path.animate({
+					left: "335px"
+				});
+			}
+		}
+		else {
+			path.css('left', "278px");
+			path.css('display', "none");
+		}
 	});
 });
