@@ -53,15 +53,6 @@ a:hover {
 	font-family: monospace;
 }
 
-.bossPath {
-	display: none;
-	position: absolute;
-	top: 17.5%;
-	left: 54%;
-	font-size: 1.2vw;
-	width: 120px;
-}
-
 .vpPath {
 	display: none;
 	position: absolute;
@@ -71,14 +62,15 @@ a:hover {
 	width: 120px;
 }
 
-.directorPath {
-	display: none;
+/*.directorPath {
+	display: block;
 	position: absolute;
 	bottom: 40%;
 	right: 57%;
 	font-size: 13pt;
 	width: 120px;
-}
+	background: red;
+}*/
 
 .pmPath {
 	display: none;

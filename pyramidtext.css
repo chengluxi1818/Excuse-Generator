@@ -19,6 +19,18 @@
 	color: white;
 }
 
+/*.bossPath {
+	display: none;
+	top: 17.5%;
+	left: 50px;
+	width: 300px;
+	background: red;
+}*/
+
+.bossPaht_1 {
+	display: none;
+}
+
 .vp {
 	position: absolute;
 	left: 0;
@@ -42,11 +54,22 @@
 	top: 51%;
 	width: 96px;
 	text-align: center;
+	background: blue;
 }
 
 .director:hover {
 	background: black;
 	color: white;
+}
+
+.directorPath {
+	display: none;
+	position: absolute;
+	width: 200px;
+	bottom: -41px;
+	right: 98px;
+	color: black;
+	/*background: red;*/
 }
 
 .pm {
