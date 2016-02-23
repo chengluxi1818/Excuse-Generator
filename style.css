@@ -53,33 +53,6 @@ a:hover {
 	font-family: monospace;
 }
 
-.leftHiddenWord {
-	display: none;
-	position: absolute;
-	bottom: 43%;
-	right: 67.5%;
-	font-size: 1.2vw;
-	font-family: monospace;
-}
-
-.leftHiddenWordMiddle {
-	display: none;
-	position: absolute;
-	bottom: 62%;
-	right: 66.5%;
-	font-size: 1.2vw;
-	font-family: monospace;
-}
-
-.rightHiddenWord {
-	display: none;
-	position: absolute;
-	top: 39%;
-	left: 73.5%;
-	font-size: 1.2vw;
-	font-family: monospace;
-}
-
 .bossPage {
 	text-align: center;
 	height: 450px;

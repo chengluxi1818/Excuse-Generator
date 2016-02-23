@@ -29,10 +29,6 @@
 	text-align: left;
 }
 
-.bossPaht_1 {
-	display: none;
-}
-
 .vp {
 	position: absolute;
 	left: 0;
@@ -102,8 +98,8 @@
 	display: none;
 	position: absolute;
 	width: 200px;	
-	height: 150px;
-	bottom: 2px;
+	height: 160px;
+	top: -135px;
 	left: 180px;
 	color: black;
 	text-align: left;
@@ -127,10 +123,62 @@
 .comradePath {
 	display: none;
 	position: absolute;
-	width: 160px;	
-	height: 220px;
-	bottom: -2px;
+	width: 170px;	
+	height: 180px;
+	bottom: 0px;
 	left: 278px;
 	color: black;
 	text-align: left;
+	/*background: red;*/
+}
+
+/* Hidden Words */
+
+.rightHiddenWord1 {
+	display: none;
+	position: absolute;
+	width: 300px;
+	top: 91px;
+	left: 370px;
+	color: black;
+	text-align: left;
+}
+
+.rightHiddenWord2 {
+	display: none;
+	position: absolute;
+	width: 300px;
+	bottom: 115px;
+	left: 446px;
+	color: black;
+	text-align: left;
+}
+
+.rightHiddenWord3 {
+	display: none;
+	position: absolute;
+	width: 300px;
+	bottom: 135px;
+	left: 475px;
+	color: black;
+	text-align: left;
+}
+
+.leftHiddenWord1 {
+	display: none;
+	position: absolute;
+	width: 300px;
+	top: 92px;
+	right: 290px;
+	color: black;
+}
+
+.leftHiddenWord2 {
+	display: none;
+	position: absolute;
+	width: 300px;
+	bottom: 70px;
+	right: 315px;
+	color: black;
+	text-align: right;
 }

@@ -35,12 +35,10 @@ $(document).ready(function() {
 
 	$(".director").hover(function() {
 		var path = $(".directorPath");
-		var offset = path.offset();
-		var originRight = offset.right;
 
 		if(path.css("display") == "none") {
 			path.css("display", "block");
-			if(!path.is(".animated")) {
+			if(!path.is(":animated")) {
 				path.animate({
 					right: "170px"
 				});

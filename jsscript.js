@@ -8,12 +8,6 @@ var director = document.getElementById('director');
 var pm = document.getElementById('pm');
 var comrade = document.getElementById('comrade');
 
-var bossPath = document.getElementsByClassName('bossPath')[0];
-var vpPath = document.getElementsByClassName('vpPath')[0];
-var directorPath = document.getElementsByClassName('directorPath')[0];
-var pmPath = document.getElementsByClassName('pmPath')[0];
-var comradePath = document.getElementsByClassName('comradePath')[0];
-
 var leftHiddenWord = document.getElementsByClassName('leftHiddenWord')[0];
 var leftHiddenWordMiddle = document.getElementsByClassName('leftHiddenWordMiddle')[0];
 var rightHiddenWord = document.getElementsByClassName('rightHiddenWord')[0];
