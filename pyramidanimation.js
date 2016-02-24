@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	$(".Pyramid").fadeIn();
+
 	$(".boss").hover(function() {
 		var path = $(".bossPath");
 
