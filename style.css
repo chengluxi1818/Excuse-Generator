@@ -53,38 +53,3 @@ a:hover {
 	font-family: monospace;
 }
 
-.bossPageBody {
-	text-align: center;
-}
-
-.bossPageText {
-	display: none;
-	vertical-align: middle;
-	line-height: 450px;
-	font-family: monospace;
-	font-size: 1.5em;
-}
-
-.button {
-	margin: auto;
-	width: 180px;
-	font-family: monospace;
-	font-size: 1.5em;
-	text-align: center;
-}
-
-.back {
-	margin: auto;
-	width: 100px;
-	color: white;
-	background: #212121;
-}
-
-.back a {
-	color: white;
-}
-
-.back:active {
-	color: black;
-	background: white;
-}

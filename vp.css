@@ -1,0 +1,54 @@
+.vpPageBody {
+	text-align: center;
+}
+
+.vpPageText {
+	display: block;
+	vertical-align: middle;
+	line-height: 450px;
+	font-family: monospace;
+	font-size: 1.5em;
+}
+
+/*.button {
+	font-family: monospace;
+	font-size: 1.5em;
+	text-align: center;
+	background: red;
+}*/
+
+.button {
+	width: 260px;
+	margin: auto;
+	overflow: hidden;
+	font-family: monospace;
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+}
+
+.button #back {
+	float: left;
+	width: 120px;
+	text-align: center;
+	color: white;
+	background: #212121;
+}
+
+.button #next {
+	float: right;
+	width: 120px;
+	text-align: center;
+	color: white;
+	background: #212121;
+}
+
+.button #back:active{
+	color: black;
+	background: white;
+}
+
+.button #next:active{
+	color: black;
+	background: white;
+}
