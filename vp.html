@@ -37,14 +37,56 @@
 
 			<script>
 				$(document).ready(function() {
-					$(".vpPageText").fadeIn();
+					$(".vpPageText
+						").fadeIn();
 				});
 			</script>
 
+			<!-- AJAX Code! -->
+			<script>
+				function loadExcuse() {
+					var ajaxRequest;
+
+					function createAjaxRequest() {
+						try {
+							ajaxRequest = new XMLHttpRequest();
+						} catch(e) {
+							// For Internet Explorer
+							try {
+								ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");	
+							} catch(e) {
+								try {
+									ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+								} catch(e) {
+									// Out of AJAX support
+									alert("Your browser broke!"); 
+									return false;
+								}
+							}	
+						}						
+					}
+
+					createAjaxRequest();
+
+					ajaxRequest.onreadystatechange = function() {
+						if(ajaxRequest.readyState == 4 && ajaxRequest.status == 200) {
+							//$("#back").html() = ajaxRequest.responseText;
+							document.getElementById('back').innerHTML = ajaxRequest.responseText;
+							window.alert(ajaxRequest.responseText);
+						}
+					};
+
+					ajaxRequest.open("GET", "something.txt", true);
+					ajaxRequest.send(null);
+				}
+			</script>
+
+
 			<div class="button">
 				<a id="back" href="vpCheck.html">&lt;&lt; Back</a>
-				<a id="next" href="vp.html">Next &gt;&gt;</a>
+				<a id="next" onclick="loadExcuse()" >Next &gt;&gt;</a>
 			</div>
+
 
 		</div>
 	</div>
